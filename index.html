@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDx ROC Nijmegen</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        .bg-tedx-red {
+            background-color: #e62b1e;
+        }
+        .text-tedx-red {
+            color: #e62b1e;
+        }
+    </style>
+</head>
+<body class="font-sans">
+<!-- Navigation -->
+<nav class="bg-white shadow-lg fixed w-full z-50">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7">
+                <div>
+                    <a href="#" class="flex items-center py-4">
+                        <span class="text-2xl font-bold text-tedx-red">TEDx</span>
+                        <span class="font-medium text-gray-800 ml-1">ROC Nijmegen</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-1">
+                <a href="#about" class="py-4 px-2 text-gray-800 font-medium hover:text-tedx-red transition duration-300">Over Ons</a>
+                <a href="#events" class="py-4 px-2 text-gray-800 font-medium hover:text-tedx-red transition duration-300">Evenementen</a>
+                <a href="#speakers" class="py-4 px-2 text-gray-800 font-medium hover:text-tedx-red transition duration-300">Sprekers</a>
+                <a href="#partners" class="py-4 px-2 text-gray-800 font-medium hover:text-tedx-red transition duration-300">Partners</a>
+                <a href="#contact" class="py-4 px-2 text-gray-800 font-medium hover:text-tedx-red transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button">
+                    <svg class="w-6 h-6 text-gray-500 hover:text-tedx-red"
+                         fill="none" stroke-linecap="round"
+                         stroke-linejoin="round" stroke-width="2"
+                         viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="hidden mobile-menu md:hidden">
+        <ul class="pt-4 pb-3">
+            <li><a href="#about" class="block text-sm px-4 py-3 text-gray-800 hover:bg-tedx-red hover:text-white transition duration-300">Over Ons</a></li>
+            <li><a href="#events" class="block text-sm px-4 py-3 text-gray-800 hover:bg-tedx-red hover:text-white transition duration-300">Evenementen</a></li>
+            <li><a href="#speakers" class="block text-sm px-4 py-3 text-gray-800 hover:bg-tedx-red hover:text-white transition duration-300">Sprekers</a></li>
+            <li><a href="#partners" class="block text-sm px-4 py-3 text-gray-800 hover:bg-tedx-red hover:text-white transition duration-300">Partners</a></li>
+            <li><a href="#contact" class="block text-sm px-4 py-3 text-gray-800 hover:bg-tedx-red hover:text-white transition duration-300">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative pt-16 mb-8">
+    <div class="w-full h-96 bg-cover bg-center" style="background-image: url('/api/placeholder/1600/400');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container relative z-10 mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+                Welkom bij TEDx ROC Nijmegen
+            </h1>
+            <p class="text-xl text-white mb-8">Ideas worth spreading</p>
+            <a href="#events" class="bg-tedx-red text-white py-2 px-6 rounded-full font-medium text-lg hover:bg-red-700 transition duration-300">
+                Ontdek onze evenementen
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Over TEDx ROC Nijmegen</h2>
+            <div class="w-16 h-1 bg-tedx-red mx-auto"></div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <img src="/api/placeholder/600/400" alt="TEDx ROC Nijmegen" class="rounded-lg shadow-lg w-full">
+            </div>
+            <div class="md:w-1/2">
+                <p class="text-lg text-gray-700 mb-4">
+                    TEDx ROC Nijmegen is een initiatief van studenten en docenten van ROC Nijmegen, opgericht om inspirerende ideeën te delen en een platform te bieden voor creatief denken, innovatie en maatschappelijke betrokkenheid.
+                </p>
+                <p class="text-lg text-gray-700 mb-4">
+                    Onze evenementen brengen sprekers van diverse achtergronden samen om hun kennis, ervaring en passie te delen met een breder publiek. We geloven dat ideeën de wereld kunnen veranderen, en we werken eraan om deze ideeën te verspreiden binnen onze gemeenschap.
+                </p>
+                <p class="text-lg text-gray-700">
+                    In de geest van TED's missie "ideas worth spreading", organiseren we TEDx-evenementen om gemeenschappen over de hele wereld te helpen met het delen van ideeën.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Events Section -->
+<section id="events" class="py-16">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Evenementen</h2>
+            <div class="w-16 h-1 bg-tedx-red mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Event 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
+                <img src="/api/placeholder/400/250" alt="TEDx Event" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">TEDx ROC Nijmegen 2025</h3>
+                    <p class="text-gray-600 mb-4">15 Mei 2025 | ROC Nijmegen Auditorium</p>
+                    <p class="text-gray-700 mb-4">Een dag vol inspirerende talks over technologie, onderwijs en duurzaamheid. Ontmoet andere gepassioneerde mensen en ontdek nieuwe ideeën.</p>
+                    <a href="#" class="inline-block bg-tedx-red text-white py-2 px-4 rounded font-medium hover:bg-red-700 transition duration-300">Meer info</a>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
+                <img src="/api/placeholder/400/250" alt="TEDx Workshop" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">TEDx Workshop Series</h3>
+                    <p class="text-gray-600 mb-4">Elke maand | ROC Nijmegen Innovation Lab</p>
+                    <p class="text-gray-700 mb-4">Maandelijkse workshops waar studenten en professionals samenkomen om ideeën uit te wisselen en vaardigheden te ontwikkelen.</p>
+                    <a href="#" class="inline-block bg-tedx-red text-white py-2 px-4 rounded font-medium hover:bg-red-700 transition duration-300">Meer info</a>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
+                <img src="/api/placeholder/400/250" alt="TEDx Youth" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">TEDx Youth @ ROC Nijmegen</h3>
+                    <p class="text-gray-600 mb-4">10 September 2025 | ROC Nijmegen Campus</p>
+                    <p class="text-gray-700 mb-4">Een speciaal evenement voor jonge denkers en doeners, met talks en workshops die zich richten op de toekomst van jongeren.</p>
+                    <a href="#" class="inline-block bg-tedx-red text-white py-2 px-4 rounded font-medium hover:bg-red-700 transition duration-300">Meer info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Speakers Section -->
+<section id="speakers" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Onze Sprekers</h2>
+            <div class="w-16 h-1 bg-tedx-red mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Speaker 1 -->
+            <div class="text-center">
+                <div class="mb-4 overflow-hidden rounded-full inline-block">
+                    <img src="/api/placeholder/200/200" alt="Speaker" class="w-40 h-40 object-cover">
+                </div>
+                <h3 class="text-xl font-bold mb-1">Anna Jansen</h3>
+                <p class="text-gray-600 mb-2">Tech Innovator</p>
+                <p class="text-gray-700">Pionier op het gebied van duurzame technologie en sociale innovatie.</p>
+            </div>
+
+            <!-- Speaker 2 -->
+            <div class="text-center">
+                <div class="mb-4 overflow-hidden rounded-full inline-block">
+                    <img src="/api/placeholder/200/200" alt="Speaker" class="w-40 h-40 object-cover">
+                </div>
+                <h3 class="text-xl font-bold mb-1">Mark Verhoeven</h3>
+                <p class="text-gray-600 mb-2">Onderwijsvernieuwer</p>
+                <p class="text-gray-700">Expert in het transformeren van onderwijsmodellen voor de 21e eeuw.</p>
+            </div>
+
+            <!-- Speaker 3 -->
+            <div class="text-center">
+                <div class="mb-4 overflow-hidden rounded-full inline-block">
+                    <img src="/api/placeholder/200/200" alt="Speaker" class="w-40 h-40 object-cover">
+                </div>
+                <h3 class="text-xl font-bold mb-1">Sophie de Vries</h3>
+                <p class="text-gray-600 mb-2">Sociaal Ondernemer</p>
+                <p class="text-gray-700">Oprichter van meerdere succesvolle sociale ondernemingen in Nijmegen.</p>
+            </div>
+
+            <!-- Speaker 4 -->
+            <div class="text-center">
+                <div class="mb-4 overflow-hidden rounded-full inline-block">
+                    <img src="/api/placeholder/200/200" alt="Speaker" class="w-40 h-40 object-cover">
+                </div>
+                <h3 class="text-xl font-bold mb-1">Thomas Klein</h3>
+                <p class="text-gray-600 mb-2">Klimaatwetenschapper</p>
+                <p class="text-gray-700">Onderzoeker en activist op het gebied van klimaatverandering en duurzaamheid.</p>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="#" class="bg-tedx-red text-white py-2 px-6 rounded-full font-medium text-lg hover:bg-red-700 transition duration-300">
+                Bekijk alle sprekers
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Partners Section -->
+<section id="partners" class="py-16">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Onze Partners</h2>
+            <div class="w-16 h-1 bg-tedx-red mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+            <div class="flex justify-center">
+                <img src="/api/placeholder/150/80" alt="Partner Logo" class="h-16 object-contain">
+            </div>
+            <div class="flex justify-center">
+                <img src="/api/placeholder/150/80" alt="Partner Logo" class="h-16 object-contain">
+            </div>
+            <div class="flex justify-center">
+                <img src="/api/placeholder/150/80" alt="Partner Logo" class="h-16 object-contain">
+            </div>
+            <div class="flex justify-center">
+                <img src="/api/placeholder/150/80" alt="Partner Logo" class="h-16 object-contain">
+            </div>
+            <div class="flex justify-center">
+                <img src="/api/placeholder/150/80" alt="Partner Logo" class="h-16 object-contain">
+            </div>
+            <div class="flex justify-center">
+                <img src="/api/placeholder/150/80" alt="Partner Logo" class="h-16 object-contain">
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <p class="text-lg text-gray-700 mb-6">Wil je partner worden van TEDx ROC Nijmegen?</p>
+            <a href="#contact" class="bg-tedx-red text-white py-2 px-6 rounded-full font-medium text-lg hover:bg-red-700 transition duration-300">
+                Neem contact op
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Neem Contact Op</h2>
+            <div class="w-16 h-1 bg-tedx-red mx-auto"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Stuur ons een bericht</h3>
+                    <form>
+                        <div class="mb-4">
+                            <input type="text" placeholder="Naam" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-tedx-red">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" placeholder="E-mail" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-tedx-red">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" placeholder="Onderwerp" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-tedx-red">
+                        </div>
+                        <div class="mb-4">
+                            <textarea placeholder="Bericht" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-tedx-red"></textarea>
+                        </div>
+                        <button type="submit" class="bg-tedx-red text-white py-2 px-6 rounded font-medium hover:bg-red-700 transition duration-300">
+                            Verstuur
+                        </button>
+                    </form>
+                </div>
+
+                <div class="md:w-1/2 md:pl-8">
+                    <h3 class="text-xl font-bold mb-4">Contactgegevens</h3>
+                    <p class="flex items-start mb-4">
+                        <i class="fas fa-map-marker-alt text-tedx-red mt-1 mr-3"></i>
+                        <span>ROC Nijmegen<br>Campusbaan 6<br>6512 BT Nijmegen</span>
+                    </p>
+                    <p class="flex items-center mb-4">
+                        <i class="fas fa-envelope text-tedx-red mr-3"></i>
+                        <span>info@tedxrocnijmegen.nl</span>
+                    </p>
+                    <p class="flex items-center mb-6">
+                        <i class="fas fa-phone-alt text-tedx-red mr-3"></i>
+                        <span>024 123 4567</span>
+                    </p>
+
+                    <h3 class="text-xl font-bold mb-4">Volg ons</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-700 hover:text-tedx-red transition duration-300">
+                            <i class="fab fa-facebook-f text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-tedx-red transition duration-300">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-tedx-red transition duration-300">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-tedx-red transition duration-300">
+                            <i class="fab fa-linkedin-in text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-tedx-red transition duration-300">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-12 bg-tedx-red">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold text-white">Blijf op de hoogte</h3>
+                <p class="text-white opacity-90">Schrijf je in voor onze nieuwsbrief voor updates over evenementen</p>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3">
+                <form class="flex">
+                    <input type="email" placeholder="Jouw e-mailadres" class="flex-grow px-4 py-2 rounded-l focus:outline-none">
+                    <button type="submit" class="bg-gray-900 text-white px-6 py-2 rounded-r font-medium hover:bg-gray-800 transition duration-300">
+                        Inschrijven
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+            <div class="mb-8 md:mb-0">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-tedx-red">TEDx</span>
+                    <span class="font-medium text-white ml-1">ROC Nijmegen</span>
+                </div>
+                <p class="mt-4 text-gray-400 max-w-md">
+                    This independent TEDx event is operated under license from TED.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Links</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#about" class="text-gray-400 hover:text-white transition duration-300">Over Ons</a></li>
+                        <li class="mb-2"><a href="#events" class="text-gray-400 hover:text-white transition duration-300">Evenementen</a></li>
+                        <li class="mb-2"><a href="#speakers" class="text-gray-400 hover:text-white transition duration-300">Sprekers</a></li>
+                        <li class="mb-2"><a href="#partners" class="text-gray-400 hover:text-white transition duration-300">Partners</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">TED</h4>
+                    <ul>
+                        <li class="mb-2"><a href="https://www.ted.com" class="text-gray-400 hover:text-white transition duration-300">TED.com</a></li>
+                        <li class="mb-2"><a href="https://www.ted.com/about/programs-initiatives/tedx-program" class="text-gray-400 hover:text-white transition duration-300">TEDx Program</a></li>
+                        <li class="mb-2"><a href="https://www.ted.com/talks" class="text-gray-400 hover:text-white transition duration-300">TED Talks</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legaal</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacybeleid</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white transition duration-300">Algemene Voorwaarden</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white transition duration-300">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm">
+                © 2025 TEDx ROC Nijmegen. Alle rechten voorbehouden.
+            </p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 80, // Adjust for fixed header
+                    behavior: 'smooth'
+                });
+
+                // Hide mobile menu after clicking
+                if (!menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
