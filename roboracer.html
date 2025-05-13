@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo Racer - TEDx ROC Nijmegen</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-tedx-red {
+            background-color: #e62b1e;
+        }
+        .text-tedx-red {
+            color: #e62b1e;
+        }
+    </style>
+</head>
+<body class="font-sans">
+<!-- Navigation -->
+<nav class="bg-white shadow-lg fixed w-full z-50">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-7">
+                <div>
+                    <a href="index.html" class="flex items-center py-4">
+                        <span class="text-2xl font-bold text-tedx-red">TEDx</span>
+                        <span class="font-medium text-gray-800 ml-1">ROC Nijmegen</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-1">
+                <a href="index.html#about" class="py-4 px-2 text-gray-800 font-medium hover:text-tedx-red transition duration-300">Over Ons</a>
+                <a href="index.html#events" class="py-4 px-2 text-gray-800 font-medium hover:text-tedx-red transition duration-300">Evenementen</a>
+                <a href="index.html#speakers" class="py-4 px-2 text-gray-800 font-medium hover:text-tedx-red transition duration-300">Sprekers</a>
+                <a href="robo-racer.html" class="py-4 px-2 text-gray-800 font-medium hover:text-tedx-red transition duration-300">Robo Racer</a>
+                <a href="index.html#contact" class="py-4 px-2 text-gray-800 font-medium hover:text-tedx-red transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button">
+                    <svg class="w-6 h-6 text-gray-500 hover:text-tedx-red"
+                         fill="none" stroke-linecap="round"
+                         stroke-linejoin="round" stroke-width="2"
+                         viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative pt-16 mb-8">
+    <div class="w-full h-96 bg-cover bg-center" style="background-image: url('/api/placeholder/1600/400');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container relative z-10 mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+                Robo Racer: De Toekomst van Technologie
+            </h1>
+            <p class="text-xl text-white mb-8">Ontdek de spannende wereld van robotica en AI</p>
+        </div>
+    </div>
+</header>
+
+<!-- Robo Racer Content -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Wat is Robo Racer?</h2>
+            <div class="w-16 h-1 bg-tedx-red mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <img src="/api/placeholder/600/400" alt="Robo Racer" class="rounded-lg shadow-lg w-full">
+            </div>
+            <div>
+                <p class="text-lg text-gray-700 mb-4">
+                    Robo Racer is een innovatief project waarin deelnemers worden uitgedaagd om autonome voertuigen te bouwen en te programmeren. Deze voertuigen navigeren door uitdagende parcours en nemen het tegen elkaar op in spannende races.
+                </p>
+                <p class="text-lg text-gray-700 mb-4">
+                    Het project combineert technologie, samenwerking en creativiteit, en is bedoeld voor iedereen die geïnteresseerd is in robotica, kunstmatige intelligentie en mechanisch ontwerp.
+                </p>
+                <p class="text-lg text-gray-700">
+                    Doe mee en ervaar hoe het is om de toekomst vorm te geven!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-16 bg-tedx-red">
+    <div class="container mx-auto px-4 text-center text-white">
+        <h3 class="text-3xl font-bold mb-6">Klaar om mee te doen aan Robo Racer?</h3>
+        <p class="text-lg mb-6">Schrijf je in en neem deel aan dit unieke evenement. Samen maken we technologie toegankelijker voor iedereen!</p>
+        <a href="#" class="bg-white text-tedx-red py-2 px-6 rounded-full font-medium text-lg hover:bg-gray-200 transition duration-300">
+            Meld je aan
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-400 text-sm">
+            © 2025 TEDx ROC Nijmegen. Alle rechten voorbehouden.
+        </p>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
+</body>
+</html>
